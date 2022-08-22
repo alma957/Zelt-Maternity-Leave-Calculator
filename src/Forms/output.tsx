@@ -134,7 +134,7 @@ export const Output = ({props}:any):JSX.Element=>{
      
         <Typography style={marginLeft} >
 
-         Earliest date to start maternity leave if employee is sick: <b>{formatDate(new Date(subtractDays(new Date(data.date).getTime(),5*7,0)).toString())} </b>
+         Maternity leave automatic trigger if sick: <b>{formatDate(new Date(subtractDays(new Date(data.date).getTime(),5*7,0)).toString())} </b>
         </Typography>
         <IconButton sx={{color:"black"}} onClick={(e)=>{
            outputState.earlieastLeaveifSick=!outputState.earlieastLeaveifSick
@@ -143,7 +143,7 @@ export const Output = ({props}:any):JSX.Element=>{
             <AddCircle/>
          </IconButton>
     </Box>
-    <Fade in={outputState.earlieastLeaveifSick} unmountOnExit><Box><Typography style={marginLeft} > The maternity period starts automatically if the employee is absent from work because of a pregancy related illness, </Typography> </Box></Fade>
+    <Fade in={outputState.earlieastLeaveifSick} unmountOnExit><Box><Typography style={marginLeft} > The maternity period starts automatically if the employee is absent from work because of a pregancy related illness on or after this date </Typography> </Box></Fade>
 
        
     </Box>
