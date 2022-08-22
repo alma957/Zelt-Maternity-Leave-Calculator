@@ -105,7 +105,7 @@ export const Output = ({props}:any):JSX.Element=>{
             <AddCircle/>
          </IconButton>
     </Box>
-    <Fade in={outputState.maternityPayPeriod} unmountOnExit><Box><Typography style={marginLeft} > Maternity pay is calculated by taking the average weekly pay over the period above. For the first 6 weeks, the employer must pay 90% of the employee's average weekly earnings. For the remaininig 39 weeks, the employer needs to pay the minimum between 90% of the employee's average weekly earnings and £156.66 per week</Typography> </Box></Fade>
+    <Fade in={outputState.maternityPayPeriod} unmountOnExit><Box><Typography style={marginLeft} > Maternity pay is calculated by taking the average weekly pay over the period above. For the first 6 weeks, the employer must pay 90% of the employee's average weekly earnings. For the remaining 33 weeks, the employer needs to pay the minimum between 90% of the employee's average weekly earnings and £156.66 per week</Typography> </Box></Fade>
 
        
     </Box>
