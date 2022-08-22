@@ -54,7 +54,7 @@ export const Output = ({props}:any):JSX.Element=>{
         
         <Typography style={marginLeft} >
 
-         Latest date to start working in order to qualify for SMP: <b>{formatDate(new Date(subtractDays(new Date(data.date).getTime(),40*7)).toString())} </b>
+         Latest date for the employee to start working for the employer in order to be entitled to Statutory Maternity Pay: <b>{formatDate(new Date(subtractDays(new Date(data.date).getTime(),40*7)).toString())} </b>
 
         </Typography>
         <IconButton sx={{color:"black"}} onClick={(e)=>{
@@ -75,7 +75,7 @@ export const Output = ({props}:any):JSX.Element=>{
         
         <Typography style={marginLeft} >
 
-         Deadline for employee to notify employer that she is pregant and wants to take maternity leave: <b>{formatDate(new Date(subtractDays(new Date(data.date).getTime(),15*7)).toString())} </b>
+         Deadline for the employee to notify the employer that she is pregant and wants to take maternity leave: <b>{formatDate(new Date(subtractDays(new Date(data.date).getTime(),15*7)).toString())} </b>
         </Typography>
         <IconButton sx={{color:"black"}} onClick={(e)=>{
            outputState.deadlineNotification=!outputState.deadlineNotification
@@ -84,7 +84,7 @@ export const Output = ({props}:any):JSX.Element=>{
             <AddCircle/>
          </IconButton>
     </Box>
-    <Fade in={outputState.deadlineNotification} unmountOnExit><Box><Typography style={marginLeft} > An employee must let her employer know at least with a 15 weeks notice that she intends to take maternity leave. The employee is requested to tell the employer the expected week of childbirth (submitted on a form MAT B1) and the intended maternity leave start date</Typography> </Box></Fade>
+    <Fade in={outputState.deadlineNotification} unmountOnExit><Box><Typography style={marginLeft} > An employee must let her employer know at least 15 weeks in advance that she intends to take maternity leave as well as the expected week of childbirth (submitted on a form MAT B1) and the intended maternity leave start date</Typography> </Box></Fade>
 
        
 
@@ -105,7 +105,7 @@ export const Output = ({props}:any):JSX.Element=>{
             <AddCircle/>
          </IconButton>
     </Box>
-    <Fade in={outputState.maternityPayPeriod} unmountOnExit><Box><Typography style={marginLeft} > Maternity pay is calculated by taking the average weekly pay over this period. For the first 6 weeks the employer must pay the 90% of the average weekly earnings while for the remaininig 39 weeks the maximum between the 90% of average weekly earnings and £156.66</Typography> </Box></Fade>
+    <Fade in={outputState.maternityPayPeriod} unmountOnExit><Box><Typography style={marginLeft} > Maternity pay is calculated by taking the average weekly pay over the period above. For the first 6 weeks, the employer must pay 90% of the employee's average weekly earnings. For the remaininig 39 weeks, the employer needs to pay the minimum between 90% of the employee's average weekly earnings and £156.66 per week</Typography> </Box></Fade>
 
        
     </Box>
@@ -143,7 +143,7 @@ export const Output = ({props}:any):JSX.Element=>{
             <AddCircle/>
          </IconButton>
     </Box>
-    <Fade in={outputState.earlieastLeaveifSick} unmountOnExit><Box><Typography style={marginLeft} > The maternity period starts automatically if the employee is absent for work because of a pregancy related illness, </Typography> </Box></Fade>
+    <Fade in={outputState.earlieastLeaveifSick} unmountOnExit><Box><Typography style={marginLeft} > The maternity period starts automatically if the employee is absent from work because of a pregancy related illness, </Typography> </Box></Fade>
 
        
     </Box>
