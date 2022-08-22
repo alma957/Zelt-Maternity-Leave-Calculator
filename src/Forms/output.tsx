@@ -5,7 +5,7 @@ import { isValidDate,currencyFormat,roundUpAll } from "./maternityCalculator";
 import { useState } from "react";
 
 import { AddCircle } from "@mui/icons-material";
-const marginLeft={marginLeft:"5px",marginTop:"7px"}
+const marginLeft={marginLeft:"10px",marginTop:"7px"}
 
 
  export  const formatDate = (formatDate: string): string => {
@@ -143,7 +143,7 @@ export const Output = ({props}:any):JSX.Element=>{
             <AddCircle/>
          </IconButton>
     </Box>
-    <Fade in={outputState.earlieastLeaveifSick} unmountOnExit><Box><Typography style={marginLeft} > The maternity period starts automatically, if the employee is absent for work because of a pregancy related illness, </Typography> </Box></Fade>
+    <Fade in={outputState.earlieastLeaveifSick} unmountOnExit><Box><Typography style={marginLeft} > The maternity period starts automatically if the employee is absent for work because of a pregancy related illness, </Typography> </Box></Fade>
 
        
     </Box>
