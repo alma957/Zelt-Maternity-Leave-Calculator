@@ -3,11 +3,11 @@ export interface InputState {
    date:string
   }
  export interface OutputState {
-    earliestLeave:string;
-    earlieastLeaveifSick:string;
-    maternityPayPeriod:string;
-    deadlineNotification:string;
-    latestDateToJoin:string;
+    earliestLeave:boolean;
+    earlieastLeaveifSick:boolean;
+    maternityPayPeriod:boolean;
+    deadlineNotification:boolean;
+    latestDateToJoin:boolean;
     
   }
   export interface IconProps {
