@@ -1,16 +1,14 @@
 export interface InputState {
 
-    expectedDueDate:string;
-    employmentStartDate:string;
-    payPeriod:string;
-    pay:number;
-    maternityStart:string;
-    lastPaySlip:string;
+   date:string
   }
  export interface OutputState {
     earliestLeave:string;
     earlieastLeaveifSick:string;
-
+    maternityPayPeriod:string;
+    deadlineNotification:string;
+    latestDateToJoin:string;
+    
   }
   export interface IconProps {
     icon:boolean;
